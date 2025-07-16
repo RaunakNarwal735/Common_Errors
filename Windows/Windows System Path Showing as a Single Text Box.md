@@ -26,9 +26,10 @@ This often happens when adding tools (like **FFmpeg**) by editing the variable a
 
 1. **Open Environment Variables**  
    `Start → type "environment variables" → "Edit the system environment variables" → Environment Variables…`
-
+   ![](https://github.com/RaunakNarwal735/Common_Errors/blob/main/Windows/Images/Screenshot%202025-07-17%20000416.png)
+   ![](https://github.com/RaunakNarwal735/Common_Errors/blob/main/Windows/Images/Screenshot%202025-07-17%20000409.png)
 2. Under **System variables**, select **Path**, click **Edit**. You’ll see the plain text view.
-
+    ![](https://github.com/RaunakNarwal735/Common_Errors/blob/main/Windows/Images/Screenshot%202025-07-17%20000354.png)
 3. **Copy the entire Path value** to a scratch editor (Notepad).
 
 4. **Inspect & clean it**:
@@ -41,9 +42,9 @@ This often happens when adding tools (like **FFmpeg**) by editing the variable a
 6. Append tool paths (Git, FFmpeg, Python, etc.) **after** the system defaults. Order isn’t critical, but keep core Windows entries first.
 
 7. Paste the cleaned, semicolon‑separated string back into the System Path field. Click **OK** to close all dialogs.
-
+  
 8. **Restart** open terminals / IDEs so they pick up the change.
-
+  ![](https://github.com/RaunakNarwal735/Common_Errors/blob/main/Windows/Images/Screenshot%202025-07-16%20235923.png)
 9. Test:
    ```bat
    echo %PATH%
